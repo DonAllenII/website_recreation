@@ -1,0 +1,97 @@
+:root {
+    --secondary: #121212;
+    --tertiary: #1f1f1f;
+
+    --tertiary-rgb: 78, 79, 79;
+    --secondary-rgb: 58, 58, 59;
+  }
+  
+  .bg-secondary {
+    background-color: var(--secondary) !important;
+  }
+ 
+  
+  .bg-tertiary {
+    background-color: var(--tertiary) !important;
+  }
+
+  .text-tertiary {
+    color: var(--tertiary) !important;
+  }
+  
+  .bg-gradient {
+    background-image: gradient(var(--tertiary),var(--secondary));
+
+  }
+
+  .card {
+    background-color: transparent !important;
+    background-image: linear-gradient(
+      to top,
+        rgba(var(--secondary-rgb), .025),
+        rgba(var(--secondary-rgb), .01)
+      ) !important;
+      border: none !important;
+      transition: all 0.3s ease;
+    }
+  
+  
+  .card:hover {
+    background-image: linear-gradient(
+      to top,
+      rgba(var(--tertiary-rgb), .05),
+      rgba(var(--tertiary-rgb), .025)
+    ) !important;
+    transform: scale(1.02);
+    border-radius: 0.5rem !important;
+    border-top-left-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+  }
+  .play-button {
+    opacity:0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    bottom: 6rem;
+    left: 11rem;
+  }
+  .card:hover .play-button {
+    display: block;
+    opacity: 100;
+    position: absolute;
+    bottom: 6rem;
+    left: 11rem;
+  }
+  
+  main::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(104, 140, 240, 0.3);
+  }
+
+  main::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+footer::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--tertiary);
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+footer::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--tertiary);
+  margin-bottom: .5rem;
+  margin-top: 2.5rem;
+}
+
+.social:hover{
+  background-color: rgb(147, 147, 147) !important;
+  transition: background-color 0.3s ease !important;
+}
