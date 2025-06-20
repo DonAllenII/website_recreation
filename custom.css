@@ -5,6 +5,31 @@
     --tertiary-rgb: 78, 79, 79;
     --secondary-rgb: 58, 58, 59;
   }
+
+  .bg-transparent {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  input::placeholder {
+    color: white !important;
+    opacity: 1 !important;
+  }
+
+  input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+  }
+
+  file-icon::before {
+    content: "";
+    display: inline-block;
+    width: 2px; /* thickness of the line */
+    height: 100%; /* full height of the parent */
+    background-color: #fff; /* or any color */
+    margin-right: 10px; /* space between line and text */
+    vertical-align: middle;
+  }
   
   .bg-secondary {
     background-color: var(--secondary) !important;
