@@ -120,3 +120,7 @@ footer::after {
   background-color: rgb(147, 147, 147) !important;
   transition: background-color 0.3s ease !important;
 }
+
+.about-links {
+  color: #1cb955;
+}
