@@ -96,7 +96,7 @@
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
-footer::before {
+/* footer::before {
   content: '';
   display: block;
   height: 2px;
@@ -104,9 +104,9 @@ footer::before {
   background-color: var(--tertiary);
   margin-bottom: 2.5rem;
   margin-top: 2.5rem;
-}
+}*/
 
-footer::after {
+/*footer::after {
   content: '';
   display: block;
   height: 2px;
@@ -114,7 +114,7 @@ footer::after {
   background-color: var(--tertiary);
   margin-bottom: .5rem;
   margin-top: 2.5rem;
-}
+} */
 
 .social:hover{
   background-color: rgb(147, 147, 147) !important;
@@ -123,4 +123,8 @@ footer::after {
 
 .about-links {
   color: #1cb955;
+}
+
+.f-about-links:hover {
+  color: #1cb955 !important;
 }
